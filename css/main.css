@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: rgb(238, 174, 202);
+	background: radial-gradient(circle, #eeaeca 5%, #00aaff 97%);
+}
+
+header h1 {
+	text-align: center;
+	font-size: 3rem;
+}
+
+section {
+    margin-top: 90px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	height: 55vh;
+	grid-template-columns: repeat(5, 65px);
+	grid-template-rows: minmax(100px, auto) repeat(6, 70px);
+
+}
+
+button {
+	cursor: pointer;
+	font-size: 2rem;
+	border: 0px solid rgba(0, 0, 0, .75);
+	outline: none;
+	color: white;
+	transition: border 500ms;
+}
+
+button:hover {
+	background-color: black;
+}
+
+.twiceSize {
+	grid-column: span 2;
+	text-align: center;
+}
+
+.basicSymbols,
+.btnDEL,
+.btnEquals,
+.btnAC {
+	background-color: black;
+}
+
+.symbols {
+	background-color: #00AAFF;
+}
+
+.num {
+	background-color: rgba(0, 0, 0, .85);
+}
+
+.basicSymbols {
+	font-size: 1rem;
+}
+.btnDEL, .symbols, .btnAC{
+    font-size: 1rem;
+}
+
+.basicSymbols:hover,
+.btnDEL:hover,
+.numbers:hover,
+.btnEquals:hover,
+.btnAC:hover {
+	background-color: black;
+	border-bottom: 3px solid #00AAFF;
+}
+
+#output {
+	grid-column: 1 / 6;
+	background-color: black;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 15px;
+	color: white;
+	word-wrap: break-word;
+	word-break: break-all;
+	min-height: 17vh;
+}
+
+#output #previousOutput {
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+#output #currentOutput {
+	color: white;
+	font-size: 3rem;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
